@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: payroll
+      POSTGRES_USER: payroll
+      POSTGRES_PASSWORD: payroll
+    ports:
+      - "127.0.0.1:55432:5432"
